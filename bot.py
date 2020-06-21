@@ -199,7 +199,8 @@ async def on_command_error(ctx, error):
         message = f"Sorry, I only work in servers!"
         await message_delete_soon(ctx, message, 3)
     else:
-        await ctx.send(f"There seems to have been an error!\nError:`{error}` Please use !report to report it!")
+        await ctx.send(f"There seems to have been a problem!\nError:`{error}` If you believe this is a mistake, "
+                       f"please use !report to report it!")
 
 
 @bot.command(name="test", description="Lets you figure out if the bot is online")
