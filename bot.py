@@ -199,7 +199,7 @@ async def on_command_error(ctx, error):
         message = f"Sorry, I only work in servers!"
         await message_delete_soon(ctx, message, 3)
     else:
-        await ctx.send(f"There seems to have been a problem!\nError:`{error}` If you believe this is a mistake, "
+        await ctx.send(f"There seems to have been a problem!\n`{error}`\nIf you believe this is a mistake, "
                        f"please use !report to report it!")
 
 
