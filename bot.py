@@ -205,7 +205,7 @@ async def on_command_error(ctx, error):
 
 @bot.command(name="test", description="Lets you figure out if the bot is online")
 async def test(ctx):
-    await ctx.send(f"The bot is indeed online, {ctx.author}")
+    await ctx.send(f"The bot is indeed online, {str(ctx.author)[:-5]}")
 
 
 bot.run(TOKEN)
